@@ -1,0 +1,30 @@
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % echo "Hello, world! " > hello_world.txt
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % git add hello_world.txt
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) a8a2900] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % echo "こんにちは、世界！ " >> hello_world.txt
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % git add hello_world.txt
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % git commit -m "日本語訳を追記"
+[main 6c1e66e] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % git log
+commit 6c1e66ecf223b2b610b78ea45b06e3930fdb0480 (HEAD -> main)
+Author: huggy777 <cannonhashimoto@gmail.com>
+Date:   Fri Oct 4 22:30:18 2024 +0900
+
+    日本語訳を追記
+
+commit a8a290055eaf29947a5a09144d856764dfbad5f6
+Author: huggy777 <cannonhashimoto@gmail.com>
+Date:   Fri Oct 4 22:27:40 2024 +0900
+
+    hello_world.txtを追加
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % git log --oneline
+6c1e66e (HEAD -> main) 日本語訳を追記
+a8a2900 hello_world.txtを追加
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro git_challenge % cd .. 
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro Git % cd kadai_005
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro kadai_005 % touch kadai_005.txt
+hashimotoyuuji@hashimotoyuujinoMacBook-Pro kadai_005 % 
